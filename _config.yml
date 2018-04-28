@@ -1,0 +1,16 @@
+title: 风之城
+email: windcity.cd@foxmail.com
+description: 风之城
+# github用这个
+baseurl: "windcity/"
+# 本地用这个
+#baseurl: ""
+url: ""
+twitter_username: windcitytech
+github_username:  windcitytech
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed

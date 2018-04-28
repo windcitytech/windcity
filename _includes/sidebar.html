@@ -1,0 +1,38 @@
+<!-- Sidebar -->
+<div id="sidebar">
+    <div class="inner">
+        <!-- Search -->
+        <section id="search" class="alt">
+            <form method="post" action="#">
+                <input type="text" name="query" id="query" placeholder="搜索"/>
+            </form>
+        </section>
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="menu">
+                <li><a href="{{ '/' | absolute_url }}">主页</a></li>
+                <li>
+                    <span class="opener">技术</span>
+                    <ul class="menu2">
+                        <li><a href="{{'tech/ai/category'| absolute_url}}">ai</a></li>
+                        <li><a href="{{'tech/media/category'| absolute_url}}">media</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="opener">创业</span>
+                    <ul class="menu2">
+                        <li><a href="{{'startups/note/category'| absolute_url}}">笔记</a></li>
+                        <li><a href="#">实验</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ 'idea.html' | absolute_url }}">随笔</a></li>
+                <li><a href="{{ 'idea.html' | absolute_url }}">思考</a></li>
+                <li><a href="{{ 'generic.html' | absolute_url }}">记忆</a></li>
+            </ul>
+        </nav>
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright">&copy; {{ site.title }}. 保留所有权利.</p>
+        </footer>
+    </div>
+</div>

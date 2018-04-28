@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+{% include head.html %}
+<body>
+<div id="wrapper">
+    <div id="main">
+        <div class="inner">
+
+            <header id="header">
+                <a href="" class="logo"><strong>{{ page.title }}</strong></a>
+            </header>
+            <br><br>
+            <ul>
+                {% for post in site.posts %}
+                {% if post.categories == page.categories %}
+                <li>
+                    <a href="{{post.url | absolute_url}}">{{ post.title }}</a>
+                    {{ post.excerpt }}
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% include sidebar.html %}
+</div>
+{% include footer.html %}
+</body>
+</html>
+
